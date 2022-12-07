@@ -55,6 +55,10 @@ display-signature-help-docs	= true
 # Remapping some Keymaps
 [keys.normal]
 C-s = ":w" # Maps the Ctrl-s to the typable command :w which is an alias for :write (save file)
+C-h = "move_prev_word_end"
+C-l = "move_next_word_start"
 
 [keys.insert]
 k = { k = "normal_mode" } # Maps `jk` to exit insert mode
+C-left = "move_prev_word_start"
+C-right = "move_next_word_end"
