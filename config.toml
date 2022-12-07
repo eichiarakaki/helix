@@ -1,4 +1,4 @@
-theme = "rose_pine"
+theme = "nightfox"
 
 [editor]
 line-number = "relative"
@@ -13,12 +13,26 @@ select = "underline"
 [editor.indent-guides]
 render = true
 
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name", "diagnostics"]
+right = ["selections", "position"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.file-picker]
+hidden = false
+parents = false
+
+[editor.whitespace]
+render = "none"
 
 [editor.lsp]
 display-messages = true
 auto-signature-help	= true
 display-signature-help-docs	= true
-
 
 [editor.auto-pairs]
 '(' = ')'
