@@ -29,7 +29,7 @@ hidden = false
 parents = false
 
 [editor.whitespace]
-render = "all"
+render = "none"
 
 [editor.indent-guides]
 render = false
