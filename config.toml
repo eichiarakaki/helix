@@ -10,9 +10,6 @@ insert = "bar"
 normal = "block"
 select = "underline"
 
-[editor.indent-guides]
-render = true
-
 [editor.statusline]
 left = ["mode", "spinner"]
 center = ["file-name", "diagnostics"]
@@ -27,7 +24,12 @@ hidden = false
 parents = false
 
 [editor.whitespace]
-render = "none"
+render = "all"
+
+[editor.indent-guides]
+render = false
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
 
 [editor.lsp]
 display-messages = true
