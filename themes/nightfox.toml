@@ -120,11 +120,11 @@
 
 "operator" = {  fg = "fg2" } # Logical, mathematical, and other operators.
 
-"function" = { fg = "red" }
+"function" = { fg = "magenta" }
 "function.builtin" = { fg = "red" }
 "function.macro" = { fg = "blue" }
-# "function.special" = { fg = "blue-bright" } # Preprocessor function in C.
-# "function.method" = { fg = "blue-bright" } # Class / Struct methods.
+"function.special" = { fg = "blue-bright" } # Preprocessor function in C.
+"function.method" = { fg = "blue-bright" } # Class / Struct methods.
 
 "tag" = { fg = "blue-bright" } # As in <body> for html, css tags.
 
