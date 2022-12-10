@@ -1,7 +1,7 @@
 # INTERFACE
 # These scopes are used for theming the editor interface.
 
-# "ui.background" = { bg = "bg1" } # Default background color.
+"ui.background" = { bg = "bg1" } # Default background color.
 "ui.window" = { fg = "bg0" } # Window border between splits.
 "ui.gutter" = { fg = "fg3" } # Left gutter for diagnostics and breakpoints.
 
@@ -122,7 +122,7 @@
 
 "function" = { fg = "magenta" }
 "function.builtin" = { fg = "red" }
-"function.macro" = { fg = "blue" }
+"function.macro" = { fg = "green" }
 "function.special" = { fg = "blue-bright" } # Preprocessor function in C.
 "function.method" = { fg = "blue-bright" } # Class / Struct methods.
 
@@ -163,8 +163,8 @@ pink           = "#d67ad2"
 pink-bright    = "#dc8ed9"
 comment        = "#738091"
 # spec
-bg0            = "#131a24" # Dark bg (status line and float)
-bg1            = "#192330" # Default bg
+bg0            = "#080b13" # Dark bg (status line and float)
+bg1            = "#0D1117" # Default bg
 bg2            = "#212e3f" # Lighter bg (colorcolm folds)
 bg3            = "#131a24" # Lighter bg (cursor line)
 bg4            = "#131a24" # Conceal, border fg
