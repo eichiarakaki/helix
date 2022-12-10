@@ -1,9 +1,3 @@
-# Author: github.com/jhscheer
-#
-# This theme is an adaptation of
-# github.com/EdenEast/nightfox.nvim
-
-
 # INTERFACE
 # These scopes are used for theming the editor interface.
 
@@ -17,7 +11,7 @@
 
 "ui.cursor" = { bg = "fg3", fg = "bg1" } # Fallback cursor colour, non-primary cursors when there are multiple (shift-c).
 "ui.cursor.primary" = { bg = "fg1", fg = "bg1" } # The primary cursor when there are multiple (shift-c).
-"ui.cursor.match" = { fg = "yellow", modifiers = ["bold"] } # The matching parentheses of that under the cursor.
+"ui.cursor.match" = { fg = "green", modifiers = ["bold"] } # The matching parentheses of that under the cursor.
 
 "ui.selection" = { bg = "bg3" } # All currently selected text.
 "ui.selection.primary" = { bg = "bg4" } # The primary selection when there are multiple.
@@ -75,19 +69,19 @@
 # These keys match tree-sitter scopes.
 
 "special" = { fg = "fg2" } # Special symbols e.g `?` in Rust, `...` in Hare.
-"attribute" = { fg = "yellow" } # Class attributes, html tag attributes.
+"attribute" = { fg = "red" } # Class attributes, html tag attributes.
 
-"type" = { fg = "yellow" } # Variable type, like integer or string, including program defined classes, structs etc..
-"type.builtin" = { fg = "green" } # Primitive types of the language (string, int, float).
+"type" = { fg = "magenta" } # Variable type, like integer or string, including program defined classes, structs etc..
+"type.builtin" = { fg = "orange" } # Primitive types of the language (string, int, float).
 "type.enum.variant" = { fg = "orange-bright" }
 
-"constructor" = { fg = "magenta" } # Constructor method for a class or struct.
+"constructor" = { fg = "yellow" } # Constructor method for a class or struct.
 
-"constant" = { fg = "orange-bright" } # Constant value
-"constant.builtin" = { fg = "orange-bright" } # Special constants like `true`, `false`, `none`, etc.
-"constant.builtin.boolean" = { fg = "yellow" } # True or False.
+"constant" = { fg = "orange" } # Constant value
+"constant.builtin" = { fg = "orange" } # Special constants like `true`, `false`, `none`, etc.
+"constant.builtin.boolean" = { fg = "orange" } # True or False.
 "constant.character" = { fg = "green" } # Constant of character type.
-"constant.character.escape" = { fg = "yellow-bright", modifiers = ["bold"] } # escape codes like \n.
+"constant.character.escape" = { fg = "green-dim", modifiers = ["bold"] } # escape codes like \n.
 "constant.numeric"  = { fg = "orange" } # constant integer or float value.
 
 "string" = { fg = "green" } # String literal.
@@ -99,30 +93,30 @@
 "comment.block.documentation" = { fg = "comment", modifiers = ["bold"] } # Doc comments, e.g '///' in rust.
 
 "variable" = { fg = "white" }  # Variable names.
-"variable.builtin" = { fg = "red" } # Language reserved variables: `this`, `self`, `super`, etc.
+"variable.builtin" = { fg = "blue-bright" } # Language reserved variables: `this`, `self`, `super`, etc.
 "variable.parameter" = { fg = "blue" } # Function parameters.
-"variable.other.member" = { fg = "fg2" } # Fields of composite data types (e.g. structs, unions).
+"variable.other.member" = { fg = "white" } # Fields of composite data types (e.g. structs, unions).
 
-"label" = { fg = "magenta-bright" } # lifetimes - Loop labels, among other things.
+"label" = { fg = "green-dim" } # lifetimes - Loop labels, among other things.
 
 "punctuation" = { fg = "fg2" } # Any punctuation symbol.
 # "punctuation.delimiter" = { fg = "fg2" } # Commas, colons or other delimiter depending on the language.
 # "punctuation.bracket" = { fg = "fg2" } # Parentheses, angle brackets, etc.
 # "punctuation.special" = { fg = "fg2" } # String interpolation brackets
 
-"keyword" = { fg = "magenta" } # Language reserved keywords.
-"keyword.control" = { fg = "pink" } # Control keywords.
-"keyword.control.conditional" = { fg = "magenta-bright" } # `if`, `else`, `elif`.
-"keyword.control.repeat" = { fg = "magenta-bright" } # `for`, `while`, `loop`.
-"keyword.control.import" = { fg = "pink-bright" } # `import`, `export` `use`.
-"keyword.control.return" = { fg = "magenta" } # `return` in most languages.
-"keyword.control.exception" = { fg = "magenta" } # `try`, `catch`, `raise`/`throw` and related.
-"keyword.operator" = { fg = "fg2", modifiers = ["bold"] } # 'or', 'and', 'in'.
+"keyword" = { fg = "red" } # Language reserved keywords.
+"keyword.control" = { fg = "orange" } # Control keywords.
+"keyword.control.conditional" = { fg = "green" } # `if`, `else`, `elif`.
+"keyword.control.repeat" = { fg = "red" } # `for`, `while`, `loop`.
+"keyword.control.import" = { fg = "green" } # `import`, `export` `use`.
+"keyword.control.return" = { fg = "green" } # `return` in most languages.
+"keyword.control.exception" = { fg = "yellow" } # `try`, `catch`, `raise`/`throw` and related.
+"keyword.operator" = { fg = "fg1", modifiers = ["bold"] } # 'or', 'and', 'in'.
 "keyword.directive" = { fg = "pink-bright" } # Preprocessor directives (#if in C...).
 "keyword.function" = { fg = "red" } # The keyword to define a funtion: 'def', 'fun', 'fn'.
-"keyword.storage" = { fg = "magenta" } # Keywords describing how things are stored
-"keyword.storage.type" = { fg = "magenta" } #  The type of something, class, function, var, let, etc.
-"keyword.storage.modifier" = { fg = "orange" } # Storage modifiers like static, mut, const, ref, etc.
+"keyword.storage" = { fg = "green" } # Keywords describing how things are stored
+"keyword.storage.type" = { fg = "green" } #  The type of something, class, function, var, let, etc.
+"keyword.storage.modifier" = { fg = "green" } # Storage modifiers like static, mut, const, ref, etc.
 
 "operator" = {  fg = "fg2" } # Logical, mathematical, and other operators.
 
@@ -172,8 +166,8 @@ comment        = "#738091"
 bg0            = "#131a24" # Dark bg (status line and float)
 bg1            = "#192330" # Default bg
 bg2            = "#212e3f" # Lighter bg (colorcolm folds)
-bg3            = "#29394f" # Lighter bg (cursor line)
-bg4            = "#39506d" # Conceal, border fg
+bg3            = "#131a24" # Lighter bg (cursor line)
+bg4            = "#131a24" # Conceal, border fg
 fg0            = "#d6d6d7" # Lighter fg
 fg1            = "#cdcecf" # Default fg
 fg2            = "#aeafb0" # Darker fg (status line)
