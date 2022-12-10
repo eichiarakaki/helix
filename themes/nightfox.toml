@@ -71,15 +71,15 @@
 "special" = { fg = "fg2" } # Special symbols e.g `?` in Rust, `...` in Hare.
 "attribute" = { fg = "red" } # Class attributes, html tag attributes.
 
-"type" = { fg = "magenta" } # Variable type, like integer or string, including program defined classes, structs etc..
+"type" = { fg = "blue-bright" } # Variable type, like integer or string, including program defined classes, structs etc..
 "type.builtin" = { fg = "orange" } # Primitive types of the language (string, int, float).
 "type.enum.variant" = { fg = "orange-bright" }
 
 "constructor" = { fg = "yellow" } # Constructor method for a class or struct.
 
 "constant" = { fg = "orange" } # Constant value
-"constant.builtin" = { fg = "orange" } # Special constants like `true`, `false`, `none`, etc.
-"constant.builtin.boolean" = { fg = "orange" } # True or False.
+"constant.builtin" = { fg = "orange-bright" } # Special constants like `true`, `false`, `none`, etc.
+"constant.builtin.boolean" = { fg = "fg1" } # True or False.
 "constant.character" = { fg = "green" } # Constant of character type.
 "constant.character.escape" = { fg = "green-dim", modifiers = ["bold"] } # escape codes like \n.
 "constant.numeric"  = { fg = "orange" } # constant integer or float value.
@@ -106,10 +106,10 @@
 
 "keyword" = { fg = "red" } # Language reserved keywords.
 "keyword.control" = { fg = "orange" } # Control keywords.
-"keyword.control.conditional" = { fg = "green" } # `if`, `else`, `elif`.
-"keyword.control.repeat" = { fg = "red" } # `for`, `while`, `loop`.
-"keyword.control.import" = { fg = "green" } # `import`, `export` `use`.
-"keyword.control.return" = { fg = "green" } # `return` in most languages.
+"keyword.control.conditional" = { fg = "orange" } # `if`, `else`, `elif`.
+"keyword.control.repeat" = { fg = "orange" } # `for`, `while`, `loop`.
+"keyword.control.import" = { fg = "orange" } # `import`, `export` `use`.
+"keyword.control.return" = { fg = "orange" } # `return` in most languages.
 "keyword.control.exception" = { fg = "yellow" } # `try`, `catch`, `raise`/`throw` and related.
 "keyword.operator" = { fg = "fg1", modifiers = ["bold"] } # 'or', 'and', 'in'.
 "keyword.directive" = { fg = "pink-bright" } # Preprocessor directives (#if in C...).
@@ -120,7 +120,7 @@
 
 "operator" = {  fg = "fg2" } # Logical, mathematical, and other operators.
 
-"function" = { fg = "magenta" }
+"function" = { fg = "red" }
 "function.builtin" = { fg = "red" }
 "function.macro" = { fg = "blue" }
 # "function.special" = { fg = "blue-bright" } # Preprocessor function in C.
@@ -172,5 +172,5 @@ fg0            = "#d6d6d7" # Lighter fg
 fg1            = "#cdcecf" # Default fg
 fg2            = "#aeafb0" # Darker fg (status line)
 fg3            = "#71839b" # Darker fg (line numbers, fold colums)
-sel0           = "#2b3b51" # Popup bg, visual selection bg
-sel1           = "#3c5372" # Popup sel bg, search bg
+sel0           = "#212e3f" # Popup bg, visual selection bg
+sel1           = "#131a24" # Popup sel bg, search bg
