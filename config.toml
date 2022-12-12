@@ -1,5 +1,5 @@
 # Theme
-theme = "own"
+theme = "testing"
 
 # General Helix's configuration
 [editor]
@@ -59,6 +59,6 @@ C-h = "move_prev_word_end"
 C-l = "move_next_word_start"
 
 [keys.insert]
-k = { k = "normal_mode" } # Maps `kk` to exit insert mode
+j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 C-left = "move_prev_word_start"
 C-right = "move_next_word_end"

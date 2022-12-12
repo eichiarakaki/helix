@@ -7,7 +7,7 @@
 
 "ui.text" = { fg = "fg1" } # Default text color.
 "ui.text.focus" = { bg = "sel1", fg = "fg1" } # Selection highlight in buffer-picker or file-picker.
-"ui.text.info" = { fg = "fg2", bg = "sel0" } # Info popup contents (space mode menu).
+"ui.text.info" = { fg = "fg3", bg = "sel0" } # Info popup contents (space mode menu).
 
 "ui.cursor" = { bg = "fg3", fg = "bg1" } # Fallback cursor colour, non-primary cursors when there are multiple (shift-c).
 "ui.cursor.primary" = { bg = "fg1", fg = "bg1" } # The primary cursor when there are multiple (shift-c).
@@ -71,33 +71,33 @@
 "special" = { fg = "fg2", modifiers = ["bold"]   } # Special symbols e.g `?` in Rust, `...` in Hare.
 "attribute" = { fg = "red", modifiers = ["bold"]   } # Class attributes, html tag attributes.
 
-"type" = { fg = "blue-bright", modifiers = ["bold"]   } # Variable type, like integer or string, including program defined classes, structs etc..
+"type" = { fg = "yellow", modifiers = ["bold"]   } # Variable type, like integer or string, including program defined classes, structs etc..
 "type.builtin" = { fg = "orange", modifiers = ["bold"]   } # Primitive types of the language (string, int, float).
-"type.enum.variant" = { fg = "orange-bright", modifiers = ["bold"]   }
+"type.enum.variant" = { fg = "orange", modifiers = ["bold"]   }
 
 "constructor" = { fg = "yellow", modifiers = ["bold"]   } # Constructor method for a class or struct.
 
 "constant" = { fg = "orange", modifiers = ["bold"]   } # Constant value
-"constant.builtin" = { fg = "orange-bright" } # Special constants like `true`, `false`, `none`, etc.
-"constant.builtin.boolean" = { fg = "fg1", modifiers = ["bold"]   } # True or False.
-"constant.character" = { fg = "green", modifiers = ["bold"]   } # Constant of character type.
-"constant.character.escape" = { fg = "green-dim", modifiers = ["bold"] } # escape codes like \n.
+"constant.builtin" = { fg = "yellow" } # Special constants like `true`, `false`, `none`, etc.
+"constant.builtin.boolean" = { fg = "yellow", modifiers = ["bold"]   } # True or False.
+"constant.character" = { fg = "yellow", modifiers = ["bold"]   } # Constant of character type.
+"constant.character.escape" = { fg = "blue", modifiers = ["bold"] } # escape codes like \n.
 "constant.numeric"  = { fg = "orange", modifiers = ["bold"]   } # constant integer or float value.
 
-"string" = { fg = "green" } # String literal.
-"string.regexp" = { fg = "yellow-bright", modifiers = ["bold"]   } # Regular expression literal.
-"string.special" = { fg = "yellow-bright", modifiers = ["bold"] } # Strings containing a path, URL, etc.
-"string.special.url" = { fg = "cyan", modifiers = ["bold"] } # String containing a web URL.
+"string" = { fg = "green", modifiers = ["bold"] } # String literal.
+"string.regexp" = { fg = "yellow", modifiers = ["bold"]   } # Regular expression literal.
+"string.special" = { fg = "yellow", modifiers = ["bold"] } # Strings containing a path, URL, etc.
+"string.special.url" = { fg = "yellow", modifiers = ["bold"] } # String containing a web URL.
 
-"comment" = { fg = "comment" } # This is a comment.
+"comment" = { fg = "comment", modifiers = ["bold"] } # This is a comment.
 "comment.block.documentation" = { fg = "comment", modifiers = ["bold"] } # Doc comments, e.g '///' in rust.
 
-"variable" = { fg = "white" }  # Variable names.
-"variable.builtin" = { fg = "blue-bright", modifiers = ["bold"]   } # Language reserved variables: `this`, `self`, `super`, etc.
-"variable.parameter" = { fg = "blue", modifiers = ["bold"]   } # Function parameters.
-"variable.other.member" = { fg = "white", modifiers = ["bold"]   } # Fields of composite data types (e.g. structs, unions).
+"variable" = { fg = "white", modifiers = ["bold"] }  # Variable names.
+"variable.builtin" = { fg = "orange-bright", modifiers = ["bold"]   } # Language reserved variables: `this`, `self`, `super`, etc.
+"variable.parameter" = { fg = "params", modifiers = ["bold"]   } # Function parameters.
+"variable.other.member" = { fg = "magenta", modifiers = ["bold"]   } # Fields of composite data types (e.g. structs, unions).
 
-"label" = { fg = "green-dim", modifiers = ["bold"]   } # lifetimes - Loop labels, among other things.
+"label" = { fg = "magenta", modifiers = ["bold"]   } # lifetimes - Loop labels, among other things.
 
 "punctuation" = { fg = "fg2" } # Any punctuation symbol.
 # "punctuation.delimiter" = { fg = "fg2" } # Commas, colons or other delimiter depending on the language.
@@ -106,29 +106,29 @@
 
 "keyword" = { fg = "red", modifiers = ["bold"] } # Language reserved keywords.
 "keyword.control" = { fg = "orange", modifiers = ["bold"] } # Control keywords.
-"keyword.control.conditional" = { fg = "orange", modifiers = ["bold"]  } # `if`, `else`, `elif`.
-"keyword.control.repeat" = { fg = "orange", modifiers = ["bold"]  } # `for`, `while`, `loop`.
+"keyword.control.conditional" = { fg = "red", modifiers = ["bold"]  } # `if`, `else`, `elif`.
+"keyword.control.repeat" = { fg = "red", modifiers = ["bold"]  } # `for`, `while`, `loop`.
 "keyword.control.import" = { fg = "orange", modifiers = ["bold"]  } # `import`, `export` `use`.
 "keyword.control.return" = { fg = "orange", modifiers = ["bold"]   } # `return` in most languages.
 "keyword.control.exception" = { fg = "yellow", modifiers = ["bold"]   } # `try`, `catch`, `raise`/`throw` and related.
-"keyword.operator" = { fg = "fg1", modifiers = ["bold"] } # 'or', 'and', 'in'.
-"keyword.directive" = { fg = "pink-bright", modifiers = ["bold"]   } # Preprocessor directives (#if in C...).
+"keyword.operator" = { fg = "red", modifiers = ["bold"] } # 'or', 'and', 'in'.
+"keyword.directive" = { fg = "pink", modifiers = ["bold"]   } # Preprocessor directives (#if in C...).
 "keyword.function" = { fg = "red", modifiers = ["bold"]   } # The keyword to define a funtion: 'def', 'fun', 'fn'.
-"keyword.storage" = { fg = "green", modifiers = ["bold"]   } # Keywords describing how things are stored
-"keyword.storage.type" = { fg = "green", modifiers = ["bold"]   } #  The type of something, class, function, var, let, etc.
-"keyword.storage.modifier" = { fg = "green", modifiers = ["bold"]   } # Storage modifiers like static, mut, const, ref, etc.
+"keyword.storage" = { fg = "red", modifiers = ["bold"]   } # Keywords describing how things are stored
+"keyword.storage.type" = { fg = "red", modifiers = ["bold"]   } #  The type of something, class, function, var, let, etc.
+"keyword.storage.modifier" = { fg = "cyan", modifiers = ["bold"] } # Storage modifiers like static, mut, const, ref, etc.
 
 "operator" = {  fg = "fg2" } # Logical, mathematical, and other operators.
 
-"function" = { fg = "magenta" }
-"function.builtin" = { fg = "red" }
-"function.macro" = { fg = "green" }
-"function.special" = { fg = "blue-bright" } # Preprocessor function in C.
-"function.method" = { fg = "blue-bright" } # Class / Struct methods.
+"function" = { fg = "blue", modifiers = ["bold"]  }
+"function.builtin" = { fg = "red", modifiers = ["bold"]  }
+"function.macro" = { fg = "macros", modifiers = ["bold"]  }
+"function.special" = { fg = "blue", modifiers = ["bold"]  } # Preprocessor function in C.
+"function.method" = { fg = "blue", modifiers = ["bold"]  } # Class / Struct methods.
 
-"tag" = { fg = "blue-bright" } # As in <body> for html, css tags.
+"tag" = { fg = "blue", modifiers = ["bold"]  } # As in <body> for html, css tags.
 
-"namespace" = { fg = "fg1" } # Namespace or module identifier.
+"namespace" = { fg = "white", modifiers = ["bold"]  } # Namespace or module identifier.
 
 
 # Diff ==============================
@@ -137,29 +137,31 @@
 "diff.plus" = "green" # Additions.
 "diff.minus" = "red" # Deletions.
 "diff.delta" = "blue" # Modifications.
-"diff.delta.moved" = "cyan" # Renamed or moved files.
+"diff.delta.moved" = "yellow" # Renamed or moved files.
 
 # color palette
 [palette]
+params         = "#dadee1"
 black          = "#393b44"
-red            = "#f9929b"
+red            = "#f06674"
 red-dim        = "#2f2837"
-green          = "#9CE5CC"
+green          = "#c5db84"
 green-dim      = "#26343c"
-yellow         = "#fbdf90"
+yellow         = "#f1d484"
 yellow-bright  = "#e0c989"
-blue           = "#a3b8ef"
+macros         = "#b896b8"
+blue           = "#97b2dd"
 blue-bright    = "#86abdc"
 blue-dim       = "#2f2837"
-magenta        = "#ccaced"
+magenta        = "#8ac9dc"
 magenta-bright = "#baa1e2"
-cyan           = "#9CD6E5"
-cyan-bright    = "#7ad4d6"
+cyan           = "#8bd0d2"
+cyan-bright    = "#97ceca"
 cyan-dim       = "#253f4a"
 white          = "#dfdfe0"
-orange         = "#FAB688"
-orange-bright  = "#f6b079"
-pink           = "#d67ad2"
+orange         = "#f0c38b"
+orange-bright  = "#f5b987"
+pink           = "#d87da7"
 pink-bright    = "#dc8ed9"
 comment        = "#738091"
 # spec
@@ -172,5 +174,5 @@ fg0            = "#d6d6d7" # Lighter fg
 fg1            = "#C9D1D9" # Default fg
 fg2            = "#F5F5F5" # Darker fg (status line)
 fg3            = "#71839b" # Darker fg (line numbers, fold colums)
-sel0           = "#212e3f" # Popup bg, visual selection bg
+sel0           = "#131a24" # Popup bg, visual selection bg
 sel1           = "#131a24" # Popup sel bg, search bg
