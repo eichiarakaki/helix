@@ -1,5 +1,5 @@
 # Theme
-theme = "testing"
+theme = "own"
 
 # General Helix's configuration
 [editor]
