@@ -3,7 +3,7 @@
 "ui.gutter" = { fg = "fg3" } # Left gutter for diagnostics and breakpoints.
 
 "ui.text" = { fg = "fg1" } # Default text color.
-"ui.text.focus" = { bg = "sel1", fg = "fg1" } # Selection highlight in buffer-picker or file-picker.
+"ui.text.focus" = { bg = "sel1", fg = "yellow" } # Selection highlight in buffer-picker or file-picker.
 "ui.text.info" = { fg = "fg3", bg = "sel0" } # Info popup contents (space mode menu).
 
 "ui.cursor" = { bg = "fg3", fg = "bg1" } # Fallback cursor colour, non-primary cursors when there are multiple (shift-c).
