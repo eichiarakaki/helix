@@ -33,7 +33,7 @@
 
 "ui.help" = { bg = "sel0", fg = "fg1" } # Description box for commands.
 
-"ui.menu" = { bg = "sel0", fg = "fg1" } # Code and command completion menus.
+"ui.menu" = { bg = "sel0", fg = "fg2" } # Code and command completion menus.
 "ui.menu.selected" = { bg = "fg3" } # Selected autocomplete item.
 "ui.menu.scroll"	= { fg = "fg3" } # fg sets thumb color, bg sets track color of scrollbar.
 
@@ -160,7 +160,7 @@ orange         = "#f0c38b"
 orange-bright  = "#f5b987"
 pink           = "#d87da7"
 pink-bright    = "#dc8ed9"
-comment        = "#738091"
+comment        = "#5B6573"
 # spec
 bg0            = "#111821" # bg (status line and float)
 bg1            = "#0D1117" # Default bg
@@ -169,7 +169,7 @@ bg3            = "#121923" # Lighter bg (cursor line)
 bg4            = "#1E2939" # Conceal, border fg
 fg0            = "#d6d6d7" # Lighter fg
 fg1            = "#C9D1D9" # Default fg
-fg2            = "#F5F5F5" # Darker fg (status line)
+fg2            = "#8598B1" # Darker fg (status line)
 fg3            = "#71839b" # Darker fg (line numbers, fold colums)
 sel0           = "#131a24" # Popup bg, visual selection bg
 sel1           = "#131a24" # Popup sel bg, search bg
