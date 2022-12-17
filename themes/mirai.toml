@@ -92,9 +92,9 @@
 "variable" = { fg = "white", modifiers = ["bold"] }  # Variable names.
 "variable.builtin" = { fg = "orange-bright", modifiers = ["bold"]   } # Language reserved variables: `this`, `self`, `super`, etc.
 "variable.parameter" = { fg = "params", modifiers = ["bold"]   } # Function parameters.
-"variable.other.member" = { fg = "magenta", modifiers = ["bold"]   } # Fields of composite data types (e.g. structs, unions).
+"variable.other.member" = { fg = "cyan", modifiers = ["bold"]   } # Fields of composite data types (e.g. structs, unions).
 
-"label" = { fg = "magenta", modifiers = ["bold"]   } # lifetimes - Loop labels, among other things.
+"label" = { fg = "cyan", modifiers = ["bold"]   } # lifetimes - Loop labels, among other things.
 
 "punctuation" = { fg = "fg2" } # Any punctuation symbol.
 # "punctuation.delimiter" = { fg = "fg2" } # Commas, colons or other delimiter depending on the language.
@@ -150,7 +150,7 @@ macros         = "#b896b8"
 blue           = "#97b2dd"
 blue-bright    = "#86abdc"
 blue-dim       = "#2f2837"
-magenta        = "#8ac9dc"
+magenta        = "#B99EE5"
 magenta-bright = "#baa1e2"
 cyan           = "#8bd0d2"
 cyan-bright    = "#97ceca"
