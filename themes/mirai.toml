@@ -1,4 +1,4 @@
-"ui.background" = { bg = "bg1" } # Default background color (comment if you want background to adapt to the terminal's background)
+# "ui.background" = { bg = "bg1" } # Default background color (comment if you want background to adapt to the terminal's background)
 "ui.window" = { fg = "bg0" } # Window border between splits.
 "ui.gutter" = { fg = "fg3" } # Left gutter for diagnostics and breakpoints.
 
@@ -160,7 +160,7 @@ orange         = "#f0c38b"
 orange-bright  = "#f5b987"
 pink           = "#d87da7"
 pink-bright    = "#dc8ed9"
-comment        = "#5B6573"
+comment        = "#5F6B7B"
 # spec
 bg0            = "#111821" # bg (status line and float)
 bg1            = "#0D1117" # Default bg
