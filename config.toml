@@ -1,5 +1,5 @@
 # Theme
-theme = "mirai"
+theme = "gruber_darker"
 
 # General Helix's configuration
 [editor]
@@ -11,7 +11,7 @@ color-modes = true
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
-select = "underline"
+select = "block"
 
 # Helix's statusline
 [editor.statusline]
@@ -50,6 +50,7 @@ display-signature-help-docs	= true
 '"' = '"'
 '`' = '`'
 '<' = '>'
+"'" = "'"
 
 # Remapping some Keymaps
 [keys.normal]
@@ -57,10 +58,10 @@ C-s = ":w" # Maps the Ctrl-s to the typable command :w which is an alias for :wr
 C-h = "move_prev_word_end"
 C-l = "move_next_word_start"
 C-a = "select_all"
-C-c = "yank_joined_to_clipboard"
-C-v = "paste_clipboard_after"
+#C-c = "yank_joined_to_clipboard"
+#C-v = "paste_clipboard_after"
 
 [keys.insert]
-j = { k = "normal_mode" } # Maps `jk` to exit insert mode
+k = { j = "normal_mode" } # Maps `kj` to exit insert mode
 C-left = "move_prev_word_start"
 C-right = "move_next_word_end"
