@@ -33,7 +33,7 @@ render = "none"
 
 [editor.indent-guides]
 render = false
-character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+character = "⸽" # Some characters that work well: "▏", "┆", "┊", "⸽"
 skip-levels = 1
 
 # LSP Server configuration
@@ -58,8 +58,8 @@ C-s = ":w" # Maps the Ctrl-s to the typable command :w which is an alias for :wr
 C-h = "move_prev_word_end"
 C-l = "move_next_word_start"
 C-a = "select_all"
-#C-c = "yank_joined_to_clipboard"
-#C-v = "paste_clipboard_after"
+y = "yank_joined_to_clipboard"
+p = "paste_clipboard_after"
 
 [keys.insert]
 k = { j = "normal_mode" } # Maps `kj` to exit insert mode
