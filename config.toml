@@ -1,24 +1,36 @@
 # Theme
-theme = "gruber_darker"
+# solarized dark
+# fleet_dark
+# Monokai
+# NightFox
+# gruvbox_draken
+# base16_default_dark
+# jellybeans
+# nord-night
+# rasmus
+theme = "gruvbox_dark_hard"
 
 # General Helix's configuration
 [editor]
 line-number = "relative"
 cursorline = true
 color-modes = true
+auto-completion = true
+auto-format = true
+true-color = true
 
 # Cursor type
 [editor.cursor-shape]
-insert = "bar"
+insert = "block"
 normal = "block"
 select = "block"
 
 # Helix's statusline
 [editor.statusline]
 left = ["mode", "spinner"]
-center = ["file-name", "diagnostics"]
-right = ["selections", "position"]
-separator = "│"
+center = ["file-base-name", "diagnostics"]
+right = ["position", "file-encoding", "separator", "workspace-diagnostics", "version-control"]
+separator = " "
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
@@ -49,7 +61,6 @@ display-signature-help-docs	= true
 '[' = ']'
 '"' = '"'
 '`' = '`'
-'<' = '>'
 "'" = "'"
 
 # Remapping some Keymaps

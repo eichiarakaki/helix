@@ -1,0 +1,18 @@
+inherits = "gruvbox"
+
+"ui.cursor.primary" = { modifiers = ["reversed"] }
+"ui.cursor.match" = { bg = "bg2" }
+
+"diagnostic.error" = { underline = { color = "red0", style = "curl"} }
+
+"ui.statusline" = { fg = "custom_fg", bg = "custom_bg" } 
+"ui.menu" = { bg = "custom_bg" }
+"ui.selection" = { bg = "sel_bg" }
+"ui.selection.primary" = { bg = "sel_bg" }
+"ui.cursorline.primary" = { bg = "sel_bg" }  
+
+[palette]
+bg0 = "#1d2021" # main background
+custom_bg = "#303536"
+custom_fg = "#d5c4a1"
+sel_bg = "#3c4244"
