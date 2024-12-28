@@ -13,6 +13,6 @@ inherits = "gruvbox"
 
 [palette]
 bg0 = "#1d2021" # main background
-custom_bg = "#303536"
+custom_bg = "#22302f"
 custom_fg = "#d5c4a1"
 sel_bg = "#3c4244"

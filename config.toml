@@ -27,9 +27,9 @@ select = "block"
 
 # Helix's statusline
 [editor.statusline]
-left = ["mode", "spinner"]
+left = ["mode", "spacer", "version-control", "spinner"]
 center = ["file-base-name", "diagnostics"]
-right = ["position", "file-encoding", "separator", "workspace-diagnostics", "version-control"]
+right = ["workspace-diagnostics", "spacer", "file-encoding", "spacer", "position-percentage", "spacer", "position", "spacer"]
 separator = " "
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
@@ -69,8 +69,8 @@ C-s = ":w" # Maps the Ctrl-s to the typable command :w which is an alias for :wr
 C-h = "move_prev_word_end"
 C-l = "move_next_word_start"
 C-a = "select_all"
-y = "yank_joined_to_clipboard"
-p = "paste_clipboard_after"
+C-c = "yank_joined_to_clipboard"
+C-v = "paste_clipboard_after"
 
 [keys.insert]
 k = { j = "normal_mode" } # Maps `kj` to exit insert mode
